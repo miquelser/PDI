@@ -1,11 +1,12 @@
 package org.example.model;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "usuarios-data-PDI")
+@Table(name = "Usuarios")
 public class Usuario implements Serializable {
 
     @Id
@@ -18,8 +19,7 @@ public class Usuario implements Serializable {
     private String fechaNacimiento;
     private int codNacionalidad;
     private int sexo;
-
-    // Getters y Setters
+    
 
     public String getNroDocumento() {
         return nroDocumento;

@@ -9,7 +9,7 @@ public class DateUtil {
 
     public static Date parseDate(String dateStr) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
-        sdf.setLenient(false);  // Asegura que solo acepte fechas válidas
+        sdf.setLenient(false);  
         return sdf.parse(dateStr);
     }
 
